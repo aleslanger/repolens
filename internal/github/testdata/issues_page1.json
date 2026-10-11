@@ -1,0 +1,493 @@
+{
+ "data": {
+  "repository": {
+   "issues": {
+    "pageInfo": {
+     "hasNextPage": true,
+     "endCursor": "Y3Vyc29yOjMw"
+    },
+    "nodes": [
+     {
+      "number": 385,
+      "title": "anonymized issues 385",
+      "state": "CLOSED",
+      "createdAt": "2026-10-04T12:49:20Z",
+      "closedAt": "2026-10-04T18:50:46Z",
+      "updatedAt": "2026-10-04T18:50:46Z",
+      "author": {
+       "login": "user1"
+      },
+      "milestone": null,
+      "labels": {
+       "nodes": []
+      }
+     },
+     {
+      "number": 447,
+      "title": "anonymized issues 447",
+      "state": "CLOSED",
+      "createdAt": "2026-10-04T18:16:58Z",
+      "closedAt": "2026-10-04T18:47:05Z",
+      "updatedAt": "2026-10-04T18:47:05Z",
+      "author": {
+       "login": "user1"
+      },
+      "milestone": null,
+      "labels": {
+       "nodes": []
+      }
+     },
+     {
+      "number": 421,
+      "title": "anonymized issues 421",
+      "state": "CLOSED",
+      "createdAt": "2026-10-04T15:46:47Z",
+      "closedAt": "2026-10-04T18:46:28Z",
+      "updatedAt": "2026-10-04T18:46:28Z",
+      "author": {
+       "login": "user1"
+      },
+      "milestone": null,
+      "labels": {
+       "nodes": []
+      }
+     },
+     {
+      "number": 452,
+      "title": "anonymized issues 452",
+      "state": "OPEN",
+      "createdAt": "2026-10-04T18:44:28Z",
+      "closedAt": null,
+      "updatedAt": "2026-10-04T18:44:28Z",
+      "author": {
+       "login": "user1"
+      },
+      "milestone": null,
+      "labels": {
+       "nodes": []
+      }
+     },
+     {
+      "number": 445,
+      "title": "anonymized issues 445",
+      "state": "CLOSED",
+      "createdAt": "2026-10-04T17:22:43Z",
+      "closedAt": "2026-10-04T18:42:58Z",
+      "updatedAt": "2026-10-04T18:42:58Z",
+      "author": {
+       "login": "user1"
+      },
+      "milestone": null,
+      "labels": {
+       "nodes": []
+      }
+     },
+     {
+      "number": 440,
+      "title": "anonymized issues 440",
+      "state": "OPEN",
+      "createdAt": "2026-10-04T16:59:29Z",
+      "closedAt": null,
+      "updatedAt": "2026-10-04T16:59:29Z",
+      "author": {
+       "login": "user1"
+      },
+      "milestone": null,
+      "labels": {
+       "nodes": [
+        {
+         "name": "bug"
+        }
+       ]
+      }
+     },
+     {
+      "number": 439,
+      "title": "anonymized issues 439",
+      "state": "OPEN",
+      "createdAt": "2026-10-04T16:59:28Z",
+      "closedAt": null,
+      "updatedAt": "2026-10-04T16:59:28Z",
+      "author": {
+       "login": "user1"
+      },
+      "milestone": null,
+      "labels": {
+       "nodes": [
+        {
+         "name": "bug"
+        }
+       ]
+      }
+     },
+     {
+      "number": 409,
+      "title": "anonymized issues 409",
+      "state": "CLOSED",
+      "createdAt": "2026-10-04T15:09:36Z",
+      "closedAt": "2026-10-04T16:41:51Z",
+      "updatedAt": "2026-10-04T16:41:51Z",
+      "author": {
+       "login": "user1"
+      },
+      "milestone": null,
+      "labels": {
+       "nodes": []
+      }
+     },
+     {
+      "number": 432,
+      "title": "anonymized issues 432",
+      "state": "CLOSED",
+      "createdAt": "2026-10-04T16:27:45Z",
+      "closedAt": "2026-10-04T16:41:16Z",
+      "updatedAt": "2026-10-04T16:41:16Z",
+      "author": {
+       "login": "user1"
+      },
+      "milestone": null,
+      "labels": {
+       "nodes": []
+      }
+     },
+     {
+      "number": 435,
+      "title": "anonymized issues 435",
+      "state": "OPEN",
+      "createdAt": "2026-10-04T16:40:24Z",
+      "closedAt": null,
+      "updatedAt": "2026-10-04T16:40:24Z",
+      "author": {
+       "login": "user1"
+      },
+      "milestone": null,
+      "labels": {
+       "nodes": []
+      }
+     },
+     {
+      "number": 429,
+      "title": "anonymized issues 429",
+      "state": "CLOSED",
+      "createdAt": "2026-10-04T16:16:47Z",
+      "closedAt": "2026-10-04T16:39:52Z",
+      "updatedAt": "2026-10-04T16:39:52Z",
+      "author": {
+       "login": "user1"
+      },
+      "milestone": null,
+      "labels": {
+       "nodes": []
+      }
+     },
+     {
+      "number": 398,
+      "title": "anonymized issues 398",
+      "state": "CLOSED",
+      "createdAt": "2026-10-04T14:03:52Z",
+      "closedAt": "2026-10-04T16:27:27Z",
+      "updatedAt": "2026-10-04T16:27:27Z",
+      "author": {
+       "login": "user1"
+      },
+      "milestone": null,
+      "labels": {
+       "nodes": []
+      }
+     },
+     {
+      "number": 423,
+      "title": "anonymized issues 423",
+      "state": "OPEN",
+      "createdAt": "2026-10-04T16:06:45Z",
+      "closedAt": null,
+      "updatedAt": "2026-10-04T16:25:04Z",
+      "author": {
+       "login": "user1"
+      },
+      "milestone": null,
+      "labels": {
+       "nodes": [
+        {
+         "name": "bug"
+        }
+       ]
+      }
+     },
+     {
+      "number": 430,
+      "title": "anonymized issues 430",
+      "state": "OPEN",
+      "createdAt": "2026-10-04T16:24:54Z",
+      "closedAt": null,
+      "updatedAt": "2026-10-04T16:24:54Z",
+      "author": {
+       "login": "user1"
+      },
+      "milestone": null,
+      "labels": {
+       "nodes": [
+        {
+         "name": "bug"
+        }
+       ]
+      }
+     },
+     {
+      "number": 427,
+      "title": "anonymized issues 427",
+      "state": "OPEN",
+      "createdAt": "2026-10-04T16:15:17Z",
+      "closedAt": null,
+      "updatedAt": "2026-10-04T16:15:17Z",
+      "author": {
+       "login": "user1"
+      },
+      "milestone": null,
+      "labels": {
+       "nodes": []
+      }
+     },
+     {
+      "number": 419,
+      "title": "anonymized issues 419",
+      "state": "CLOSED",
+      "createdAt": "2026-10-04T15:15:01Z",
+      "closedAt": "2026-10-04T16:14:46Z",
+      "updatedAt": "2026-10-04T16:14:46Z",
+      "author": {
+       "login": "user1"
+      },
+      "milestone": null,
+      "labels": {
+       "nodes": []
+      }
+     },
+     {
+      "number": 424,
+      "title": "anonymized issues 424",
+      "state": "OPEN",
+      "createdAt": "2026-10-04T16:06:58Z",
+      "closedAt": null,
+      "updatedAt": "2026-10-04T16:06:58Z",
+      "author": {
+       "login": "user1"
+      },
+      "milestone": null,
+      "labels": {
+       "nodes": [
+        {
+         "name": "bug"
+        }
+       ]
+      }
+     },
+     {
+      "number": 422,
+      "title": "anonymized issues 422",
+      "state": "OPEN",
+      "createdAt": "2026-10-04T16:06:34Z",
+      "closedAt": null,
+      "updatedAt": "2026-10-04T16:06:34Z",
+      "author": {
+       "login": "user1"
+      },
+      "milestone": null,
+      "labels": {
+       "nodes": [
+        {
+         "name": "bug"
+        }
+       ]
+      }
+     },
+     {
+      "number": 418,
+      "title": "anonymized issues 418",
+      "state": "OPEN",
+      "createdAt": "2026-10-04T15:15:01Z",
+      "closedAt": null,
+      "updatedAt": "2026-10-04T15:15:01Z",
+      "author": {
+       "login": "user1"
+      },
+      "milestone": null,
+      "labels": {
+       "nodes": []
+      }
+     },
+     {
+      "number": 417,
+      "title": "anonymized issues 417",
+      "state": "OPEN",
+      "createdAt": "2026-10-04T15:15:00Z",
+      "closedAt": null,
+      "updatedAt": "2026-10-04T15:15:00Z",
+      "author": {
+       "login": "user1"
+      },
+      "milestone": null,
+      "labels": {
+       "nodes": []
+      }
+     },
+     {
+      "number": 408,
+      "title": "anonymized issues 408",
+      "state": "CLOSED",
+      "createdAt": "2026-10-04T14:51:06Z",
+      "closedAt": "2026-10-04T15:13:53Z",
+      "updatedAt": "2026-10-04T15:13:53Z",
+      "author": {
+       "login": "user1"
+      },
+      "milestone": null,
+      "labels": {
+       "nodes": []
+      }
+     },
+     {
+      "number": 415,
+      "title": "anonymized issues 415",
+      "state": "OPEN",
+      "createdAt": "2026-10-04T15:13:27Z",
+      "closedAt": null,
+      "updatedAt": "2026-10-04T15:13:27Z",
+      "author": {
+       "login": "user1"
+      },
+      "milestone": null,
+      "labels": {
+       "nodes": []
+      }
+     },
+     {
+      "number": 414,
+      "title": "anonymized issues 414",
+      "state": "OPEN",
+      "createdAt": "2026-10-04T15:13:26Z",
+      "closedAt": null,
+      "updatedAt": "2026-10-04T15:13:26Z",
+      "author": {
+       "login": "user1"
+      },
+      "milestone": null,
+      "labels": {
+       "nodes": []
+      }
+     },
+     {
+      "number": 381,
+      "title": "anonymized issues 381",
+      "state": "CLOSED",
+      "createdAt": "2026-10-04T12:20:28Z",
+      "closedAt": "2026-10-04T15:12:06Z",
+      "updatedAt": "2026-10-04T15:12:06Z",
+      "author": {
+       "login": "user1"
+      },
+      "milestone": null,
+      "labels": {
+       "nodes": []
+      }
+     },
+     {
+      "number": 405,
+      "title": "anonymized issues 405",
+      "state": "CLOSED",
+      "createdAt": "2026-10-04T14:40:00Z",
+      "closedAt": "2026-10-04T15:11:29Z",
+      "updatedAt": "2026-10-04T15:11:29Z",
+      "author": {
+       "login": "user1"
+      },
+      "milestone": null,
+      "labels": {
+       "nodes": []
+      }
+     },
+     {
+      "number": 380,
+      "title": "anonymized issues 380",
+      "state": "CLOSED",
+      "createdAt": "2026-10-04T12:20:27Z",
+      "closedAt": "2026-10-04T15:10:00Z",
+      "updatedAt": "2026-10-04T15:10:00Z",
+      "author": {
+       "login": "user1"
+      },
+      "milestone": null,
+      "labels": {
+       "nodes": []
+      }
+     },
+     {
+      "number": 377,
+      "title": "anonymized issues 377",
+      "state": "CLOSED",
+      "createdAt": "2026-10-04T12:20:24Z",
+      "closedAt": "2026-10-04T14:50:42Z",
+      "updatedAt": "2026-10-04T14:50:43Z",
+      "author": {
+       "login": "user1"
+      },
+      "milestone": null,
+      "labels": {
+       "nodes": []
+      }
+     },
+     {
+      "number": 373,
+      "title": "anonymized issues 373",
+      "state": "OPEN",
+      "createdAt": "2026-10-04T11:49:51Z",
+      "closedAt": null,
+      "updatedAt": "2026-10-04T14:40:01Z",
+      "author": {
+       "login": "user1"
+      },
+      "milestone": null,
+      "labels": {
+       "nodes": []
+      }
+     },
+     {
+      "number": 384,
+      "title": "anonymized issues 384",
+      "state": "CLOSED",
+      "createdAt": "2026-10-04T12:23:38Z",
+      "closedAt": "2026-10-04T14:35:59Z",
+      "updatedAt": "2026-10-04T14:35:59Z",
+      "author": {
+       "login": "user1"
+      },
+      "milestone": null,
+      "labels": {
+       "nodes": []
+      }
+     },
+     {
+      "number": 361,
+      "title": "anonymized issues 361",
+      "state": "CLOSED",
+      "createdAt": "2026-10-04T11:05:20Z",
+      "closedAt": "2026-10-04T14:20:50Z",
+      "updatedAt": "2026-10-04T14:20:50Z",
+      "author": {
+       "login": "user1"
+      },
+      "milestone": null,
+      "labels": {
+       "nodes": []
+      }
+     }
+    ]
+   }
+  },
+  "rateLimit": {
+   "cost": 1,
+   "remaining": 4986,
+   "resetAt": "2026-10-08T17:57:05Z"
+  }
+ }
+}

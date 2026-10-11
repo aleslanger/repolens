@@ -1,0 +1,303 @@
+{
+ "data": {
+  "repository": {
+   "nameWithOwner": "owner/repo1",
+   "description": null,
+   "isPrivate": true,
+   "isFork": false,
+   "isArchived": false,
+   "stargazerCount": 0,
+   "forkCount": 0,
+   "pushedAt": "2026-10-08T12:44:11Z",
+   "defaultBranchRef": {
+    "name": "master"
+   },
+   "issues": {
+    "totalCount": 80
+   },
+   "pullRequests": {
+    "totalCount": 0
+   },
+   "languages": {
+    "edges": [
+     {
+      "size": 8157731,
+      "node": {
+       "name": "Rust"
+      }
+     },
+     {
+      "size": 213113,
+      "node": {
+       "name": "Python"
+      }
+     },
+     {
+      "size": 27846,
+      "node": {
+       "name": "Shell"
+      }
+     },
+     {
+      "size": 15391,
+      "node": {
+       "name": "Makefile"
+      }
+     }
+    ]
+   },
+   "milestones": {
+    "nodes": [
+     {
+      "number": 1,
+      "title": "Milestone 1",
+      "state": "OPEN",
+      "dueOn": null,
+      "open": {
+       "totalCount": 7
+      },
+      "closed": {
+       "totalCount": 12
+      }
+     },
+     {
+      "number": 2,
+      "title": "Milestone 2",
+      "state": "OPEN",
+      "dueOn": null,
+      "open": {
+       "totalCount": 7
+      },
+      "closed": {
+       "totalCount": 8
+      }
+     },
+     {
+      "number": 3,
+      "title": "Milestone 3",
+      "state": "OPEN",
+      "dueOn": null,
+      "open": {
+       "totalCount": 4
+      },
+      "closed": {
+       "totalCount": 2
+      }
+     },
+     {
+      "number": 4,
+      "title": "Milestone 4",
+      "state": "OPEN",
+      "dueOn": null,
+      "open": {
+       "totalCount": 3
+      },
+      "closed": {
+       "totalCount": 3
+      }
+     },
+     {
+      "number": 5,
+      "title": "Milestone 5",
+      "state": "OPEN",
+      "dueOn": null,
+      "open": {
+       "totalCount": 3
+      },
+      "closed": {
+       "totalCount": 4
+      }
+     },
+     {
+      "number": 6,
+      "title": "Milestone 6",
+      "state": "OPEN",
+      "dueOn": null,
+      "open": {
+       "totalCount": 4
+      },
+      "closed": {
+       "totalCount": 1
+      }
+     },
+     {
+      "number": 7,
+      "title": "Milestone 7",
+      "state": "OPEN",
+      "dueOn": null,
+      "open": {
+       "totalCount": 1
+      },
+      "closed": {
+       "totalCount": 13
+      }
+     },
+     {
+      "number": 8,
+      "title": "Milestone 8",
+      "state": "OPEN",
+      "dueOn": null,
+      "open": {
+       "totalCount": 4
+      },
+      "closed": {
+       "totalCount": 4
+      }
+     },
+     {
+      "number": 9,
+      "title": "Milestone 9",
+      "state": "OPEN",
+      "dueOn": null,
+      "open": {
+       "totalCount": 5
+      },
+      "closed": {
+       "totalCount": 13
+      }
+     },
+     {
+      "number": 10,
+      "title": "Milestone 10",
+      "state": "OPEN",
+      "dueOn": null,
+      "open": {
+       "totalCount": 4
+      },
+      "closed": {
+       "totalCount": 3
+      }
+     },
+     {
+      "number": 11,
+      "title": "Milestone 11",
+      "state": "OPEN",
+      "dueOn": null,
+      "open": {
+       "totalCount": 7
+      },
+      "closed": {
+       "totalCount": 6
+      }
+     },
+     {
+      "number": 12,
+      "title": "Milestone 12",
+      "state": "OPEN",
+      "dueOn": null,
+      "open": {
+       "totalCount": 13
+      },
+      "closed": {
+       "totalCount": 10
+      }
+     },
+     {
+      "number": 13,
+      "title": "Milestone 13",
+      "state": "OPEN",
+      "dueOn": null,
+      "open": {
+       "totalCount": 4
+      },
+      "closed": {
+       "totalCount": 5
+      }
+     }
+    ]
+   },
+   "labels": {
+    "nodes": [
+     {
+      "name": "label-356",
+      "color": "f143ab"
+     },
+     {
+      "name": "bug",
+      "color": "d73a4a"
+     },
+     {
+      "name": "documentation",
+      "color": "0075ca"
+     },
+     {
+      "name": "duplicate",
+      "color": "cfd3d7"
+     },
+     {
+      "name": "enhancement",
+      "color": "a2eeef"
+     },
+     {
+      "name": "good first issue",
+      "color": "7057ff"
+     },
+     {
+      "name": "help wanted",
+      "color": "008672"
+     },
+     {
+      "name": "invalid",
+      "color": "e4e669"
+     },
+     {
+      "name": "question",
+      "color": "d876e3"
+     },
+     {
+      "name": "wontfix",
+      "color": "ffffff"
+     },
+     {
+      "name": "label-735",
+      "color": "fbca04"
+     },
+     {
+      "name": "label-98",
+      "color": "0e8a16"
+     },
+     {
+      "name": "label-646",
+      "color": "b60205"
+     },
+     {
+      "name": "label-144",
+      "color": "ee0701"
+     },
+     {
+      "name": "label-780",
+      "color": "c5def5"
+     },
+     {
+      "name": "label-716",
+      "color": "d876e3"
+     },
+     {
+      "name": "label-615",
+      "color": "000000"
+     },
+     {
+      "name": "label-547",
+      "color": "fef2c0"
+     },
+     {
+      "name": "label-930",
+      "color": "0052cc"
+     },
+     {
+      "name": "label-114",
+      "color": "5319e7"
+     }
+    ]
+   },
+   "releases": {
+    "nodes": []
+   }
+  },
+  "rateLimit": {
+   "cost": 1,
+   "remaining": 4996,
+   "resetAt": "2026-10-08T17:29:21Z"
+  }
+ }
+}

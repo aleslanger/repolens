@@ -1,0 +1,4 @@
+bin/
+.playwright-mcp/
+repolens.html
+*.db

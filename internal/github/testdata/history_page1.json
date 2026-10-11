@@ -1,0 +1,308 @@
+{
+ "data": {
+  "repository": {
+   "defaultBranchRef": {
+    "target": {
+     "history": {
+      "pageInfo": {
+       "hasNextPage": true,
+       "endCursor": "Y3Vyc29yOjE1"
+      },
+      "nodes": [
+       {
+        "oid": "00000000000000000000000057ba87def95961ba",
+        "messageHeadline": "test(e2e): anonymized 0",
+        "message": "test(e2e): anonymized 0\n\nbody\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+        "authoredDate": "2026-07-24T14:52:14Z",
+        "additions": 140,
+        "deletions": 0,
+        "changedFilesIfAvailable": 1,
+        "parents": {
+         "totalCount": 1
+        },
+        "author": {
+         "name": "Dev A",
+         "email": "dev1@example.com",
+         "user": {
+          "login": "user1"
+         }
+        }
+       },
+       {
+        "oid": "0000000000000000000000003720a657346358a3",
+        "messageHeadline": "docs: anonymized 1",
+        "message": "docs: anonymized 1\n\nbody\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+        "authoredDate": "2026-07-24T14:52:14Z",
+        "additions": 256,
+        "deletions": 0,
+        "changedFilesIfAvailable": 1,
+        "parents": {
+         "totalCount": 1
+        },
+        "author": {
+         "name": "Dev A",
+         "email": "dev1@example.com",
+         "user": {
+          "login": "user1"
+         }
+        }
+       },
+       {
+        "oid": "0000000000000000000000006a00c2d68bff80cd",
+        "messageHeadline": "chore: anonymized 2",
+        "message": "chore: anonymized 2",
+        "authoredDate": "2026-07-21T17:41:10Z",
+        "additions": 9,
+        "deletions": 1543,
+        "changedFilesIfAvailable": 48,
+        "parents": {
+         "totalCount": 1
+        },
+        "author": {
+         "name": "Dev A",
+         "email": "dev1@example.com",
+         "user": {
+          "login": "user1"
+         }
+        }
+       },
+       {
+        "oid": "0000000000000000000000004e610d8521c90aaf",
+        "messageHeadline": "anonymized 3",
+        "message": "anonymized 3",
+        "authoredDate": "2026-07-09T15:32:14Z",
+        "additions": 208,
+        "deletions": 11,
+        "changedFilesIfAvailable": 3,
+        "parents": {
+         "totalCount": 2
+        },
+        "author": {
+         "name": "Dev A",
+         "email": "dev1@example.com",
+         "user": {
+          "login": "user1"
+         }
+        }
+       },
+       {
+        "oid": "0000000000000000000000006649c1f530d52c22",
+        "messageHeadline": "fix: anonymized 4",
+        "message": "fix: anonymized 4",
+        "authoredDate": "2026-07-09T15:32:07Z",
+        "additions": 208,
+        "deletions": 11,
+        "changedFilesIfAvailable": 3,
+        "parents": {
+         "totalCount": 1
+        },
+        "author": {
+         "name": "Dev A",
+         "email": "dev1@example.com",
+         "user": {
+          "login": "user1"
+         }
+        }
+       },
+       {
+        "oid": "0000000000000000000000000fccbee7cf32ed7f",
+        "messageHeadline": "anonymized 5",
+        "message": "anonymized 5",
+        "authoredDate": "2026-07-09T10:21:55Z",
+        "additions": 57,
+        "deletions": 2,
+        "changedFilesIfAvailable": 2,
+        "parents": {
+         "totalCount": 2
+        },
+        "author": {
+         "name": "Dev A",
+         "email": "dev1@example.com",
+         "user": {
+          "login": "user1"
+         }
+        }
+       },
+       {
+        "oid": "0000000000000000000000001a7a66a019b67ced",
+        "messageHeadline": "fix: anonymized 6",
+        "message": "fix: anonymized 6",
+        "authoredDate": "2026-07-09T10:21:55Z",
+        "additions": 57,
+        "deletions": 2,
+        "changedFilesIfAvailable": 2,
+        "parents": {
+         "totalCount": 1
+        },
+        "author": {
+         "name": "Dev A",
+         "email": "dev1@example.com",
+         "user": {
+          "login": "user1"
+         }
+        }
+       },
+       {
+        "oid": "0000000000000000000000000a6a22a853205cca",
+        "messageHeadline": "anonymized 7",
+        "message": "anonymized 7",
+        "authoredDate": "2026-07-09T09:47:14Z",
+        "additions": 112,
+        "deletions": 7,
+        "changedFilesIfAvailable": 4,
+        "parents": {
+         "totalCount": 2
+        },
+        "author": {
+         "name": "Dev A",
+         "email": "dev1@example.com",
+         "user": {
+          "login": "user1"
+         }
+        }
+       },
+       {
+        "oid": "000000000000000000000000574177ff2cd40cee",
+        "messageHeadline": "feat: anonymized 8",
+        "message": "feat: anonymized 8",
+        "authoredDate": "2026-07-09T09:47:05Z",
+        "additions": 112,
+        "deletions": 7,
+        "changedFilesIfAvailable": 4,
+        "parents": {
+         "totalCount": 1
+        },
+        "author": {
+         "name": "Dev A",
+         "email": "dev1@example.com",
+         "user": {
+          "login": "user1"
+         }
+        }
+       },
+       {
+        "oid": "000000000000000000000000187eb4fcc8771d51",
+        "messageHeadline": "anonymized 9",
+        "message": "anonymized 9",
+        "authoredDate": "2026-07-09T09:43:40Z",
+        "additions": 538,
+        "deletions": 23,
+        "changedFilesIfAvailable": 12,
+        "parents": {
+         "totalCount": 2
+        },
+        "author": {
+         "name": "Dev A",
+         "email": "dev1@example.com",
+         "user": {
+          "login": "user1"
+         }
+        }
+       },
+       {
+        "oid": "0000000000000000000000000de6e2f117d629c2",
+        "messageHeadline": "feat: anonymized 10",
+        "message": "feat: anonymized 10",
+        "authoredDate": "2026-07-09T09:43:29Z",
+        "additions": 538,
+        "deletions": 23,
+        "changedFilesIfAvailable": 12,
+        "parents": {
+         "totalCount": 1
+        },
+        "author": {
+         "name": "Dev A",
+         "email": "dev1@example.com",
+         "user": {
+          "login": "user1"
+         }
+        }
+       },
+       {
+        "oid": "0000000000000000000000004e2596864a110a80",
+        "messageHeadline": "anonymized 11",
+        "message": "anonymized 11",
+        "authoredDate": "2026-07-09T09:34:48Z",
+        "additions": 637,
+        "deletions": 44,
+        "changedFilesIfAvailable": 13,
+        "parents": {
+         "totalCount": 2
+        },
+        "author": {
+         "name": "Dev A",
+         "email": "dev1@example.com",
+         "user": {
+          "login": "user1"
+         }
+        }
+       },
+       {
+        "oid": "00000000000000000000000052ddeae9bd6b069a",
+        "messageHeadline": "feat: anonymized 12",
+        "message": "feat: anonymized 12",
+        "authoredDate": "2026-07-09T09:34:41Z",
+        "additions": 637,
+        "deletions": 44,
+        "changedFilesIfAvailable": 13,
+        "parents": {
+         "totalCount": 1
+        },
+        "author": {
+         "name": "Dev A",
+         "email": "dev1@example.com",
+         "user": {
+          "login": "user1"
+         }
+        }
+       },
+       {
+        "oid": "00000000000000000000000048332c3cb10d8e98",
+        "messageHeadline": "anonymized 13",
+        "message": "anonymized 13",
+        "authoredDate": "2026-07-09T08:57:04Z",
+        "additions": 784,
+        "deletions": 263,
+        "changedFilesIfAvailable": 28,
+        "parents": {
+         "totalCount": 2
+        },
+        "author": {
+         "name": "Dev A",
+         "email": "dev1@example.com",
+         "user": {
+          "login": "user1"
+         }
+        }
+       },
+       {
+        "oid": "0000000000000000000000003a01abce026d7a8a",
+        "messageHeadline": "style: anonymized 14",
+        "message": "style: anonymized 14",
+        "authoredDate": "2026-07-09T08:56:37Z",
+        "additions": 13,
+        "deletions": 11,
+        "changedFilesIfAvailable": 2,
+        "parents": {
+         "totalCount": 1
+        },
+        "author": {
+         "name": "Dev A",
+         "email": "dev1@example.com",
+         "user": {
+          "login": "user1"
+         }
+        }
+       }
+      ]
+     }
+    }
+   }
+  },
+  "rateLimit": {
+   "cost": 1,
+   "remaining": 4984,
+   "resetAt": "2026-10-08T17:57:05Z"
+  }
+ }
+}

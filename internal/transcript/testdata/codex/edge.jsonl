@@ -1,0 +1,13 @@
+{"timestamp":"2026-09-01T10:00:00.000Z","type":"session_meta","payload":{"id":"child-1","cwd":"/home/user/projects/demo","source":{"subagent":{"thread_spawn":{"parent_thread_id":"parent-1"}}},"parent_thread_id":"parent-1"}}
+{"timestamp":"2026-09-01T10:00:01.000Z","type":"event_msg","payload":{"type":"token_count","info":{"total_token_usage":{"input_tokens":100,"cached_input_tokens":40,"output_tokens":10,"reasoning_output_tokens":3}}}}
+{"timestamp":"2026-09-01T10:00:02.000Z","type":"turn_context","payload":{"model":"gpt-6-sol","cwd":"/home/user/projects/demo"}}
+{"timestamp":"2026-09-01T10:00:03.000Z","type":"event_msg","payload":{"type":"token_count","info":{"total_token_usage":{"input_tokens":300,"cached_input_tokens":140,"output_tokens":30,"reasoning_output_tokens":13}}}}
+{"timestamp":"2026-09-01T10:00:04.000Z","type":"event_msg","payload":{"type":"token_count","info":{"total_token_usage":{"input_tokens":300,"cached_input_tokens":140,"output_tokens":30,"reasoning_output_tokens":13}}}}
+{"timestamp":"2026-09-01T10:00:05.000Z","type":"event_msg","payload":{"type":"token_count","info":null}}
+{"timestamp":"2026-09-01T10:00:06.000Z","type":"response_item","payload":{"type":"function_call","name":"spawn_agent","arguments":"x"}}
+{"timestamp":"2026-09-01T10:00:07.000Z","type":"event_msg","payload":{"type":"item_completed","item":{"type":"CommandExecution","status":"failed","exit_code":1}}}
+{"timestamp":"2026-09-01T10:00:08.000Z","type":"event_msg","payload":{"type":"mcp_tool_call_end","invocation":{"server":"playwright","tool":"browser_navigate"}}}
+{"timestamp":"2026-09-01T10:00:09.000Z","type":"event_msg","payload":{"type":"brand_new_event"}}
+{"timestamp":"2026-09-01T10:00:10.000Z","type":"response_item","payload":{"type":"brand_new_item"}}
+{"timestamp":"2026-09-01T10:00:11.000Z","type":"brand_new_type","payload":{}}
+{"timestamp":"2026-09-01T10:00:12.000Z","type":"event_msg","payload":

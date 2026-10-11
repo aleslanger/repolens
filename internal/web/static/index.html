@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RepoLens</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cstyle%3E.tile%7Bfill%3A%231f2328%7D.bars%7Bstroke%3A%23fff%7D%40media(prefers-color-scheme%3Adark)%7B.tile%7Bfill%3A%23e6edf3%7D.bars%7Bstroke%3A%23161b22%7D%7D%3C%2Fstyle%3E%3Ccircle%20class%3D%22tile%22%20cx%3D%2210.3%22%20cy%3D%2210.3%22%20r%3D%228.2%22%2F%3E%3Cpath%20class%3D%22bars%22%20d%3D%22M6.8%2014v-3M10.2%2014V8.7%22%20stroke-width%3D%222.2%22%20stroke-linecap%3D%22round%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M13.6%2014V6.2M16.4%2016.4%2022%2022%22%20stroke%3D%22%2358a6ff%22%20stroke-width%3D%222.4%22%20stroke-linecap%3D%22round%22%20fill%3D%22none%22%2F%3E%3C%2Fsvg%3E">
+<link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+<header class="masthead">
+  <a class="brand" href="#/" aria-label="RepoLens"><span class="brand-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><circle class="tile" cx="10.3" cy="10.3" r="8.2"/><path class="bar" d="M6.8 14v-3M10.2 14V8.7" stroke-width="2.2" stroke-linecap="round"/><path class="peak" d="M13.6 14V6.2" stroke-width="2.2" stroke-linecap="round"/><path class="peak" d="M16.4 16.4 22 22" stroke-width="3.1" stroke-linecap="round"/></svg></span><span class="brand-name"><span class="brand-repo">Repo</span><span class="brand-lens">Lens</span></span></a>
+  <button class="menu-toggle" id="menu" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menu" data-i18n-label="Menu">☰</button>
+  <nav class="nav" id="nav" aria-label="Hlavní navigace" data-i18n-label="Hlavní navigace">
+    <a href="#/" data-route="portfolio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z"/></svg><span data-i18n="Portfolio">Portfolio</span></a>
+    <a href="#/agents" data-route="agents"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.2 6.8L21 11l-6.8 2.2L12 20l-2.2-6.8L3 11l6.8-2.2L12 2z"/></svg><span data-i18n="Agenti">Agenti</span></a>
+    <a href="#/people" data-route="people"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20v-2c0-3 2-5 6-5s6 2 6 5v2M17 6c2 0 3 1 3 3s-1 3-3 3M18 14c2 0 3 2 3 4v2"/></svg><span data-i18n="Lidé">Lidé</span></a>
+    <a href="#/status" data-route="status"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18v-5m5 5V8m5 10V5m5 13v-8M2 21h20"/></svg><span data-i18n="Sběr dat">Sběr dat</span></a>
+    <a href="#/settings" data-route="settings"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3m0 14v3M2 12h3m14 0h3M4.9 4.9L7 7m10 10 2.1 2.1M19.1 4.9 17 7M7 17l-2.1 2.1"/></svg><span data-i18n="Nastavení">Nastavení</span></a>
+  </nav>
+  <span class="lastrun" id="lastrun"></span>
+</header>
+<div class="topbar">
+  <span class="topbar-section" id="topbar-section"></span>
+  <div class="topbar-actions">
+    <div class="lang-picker">
+      <button class="lang-toggle" id="lang" type="button" aria-expanded="false" aria-controls="lang-menu"><span class="flag flag-cs"><svg viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#fff"/><rect y="10" width="30" height="10" fill="#d7141a"/><path d="M0 0 15 10 0 20Z" fill="#11457e"/></svg></span><span class="flag flag-en" hidden><svg viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#012169"/><path d="M0 0 30 20M30 0 0 20" stroke="#fff" stroke-width="5"/><path d="M0 0 30 20M30 0 0 20" stroke="#c8102e" stroke-width="2"/><path d="M15 0v20M0 10h30" stroke="#fff" stroke-width="8"/><path d="M15 0v20M0 10h30" stroke="#c8102e" stroke-width="4"/></svg></span><b id="lang-code">CZ</b><span class="lang-chevron" aria-hidden="true">⌄</span></button>
+      <div class="lang-menu" id="lang-menu" hidden><div class="lang-menu-title" data-i18n="Přepnout jazyk">Přepnout jazyk</div><button type="button" data-lang="cs"><span class="flag"><svg viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#fff"/><rect y="10" width="30" height="10" fill="#d7141a"/><path d="M0 0 15 10 0 20Z" fill="#11457e"/></svg></span><span>Čeština</span><span class="lang-check" aria-hidden="true">✓</span></button><button type="button" data-lang="en"><span class="flag"><svg viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#012169"/><path d="M0 0 30 20M30 0 0 20" stroke="#fff" stroke-width="5"/><path d="M0 0 30 20M30 0 0 20" stroke="#c8102e" stroke-width="2"/><path d="M15 0v20M0 10h30" stroke="#fff" stroke-width="8"/><path d="M15 0v20M0 10h30" stroke="#c8102e" stroke-width="4"/></svg></span><span>English</span><span class="lang-check" aria-hidden="true">✓</span></button></div>
+    </div>
+    <button class="theme-toggle" id="theme" type="button" aria-label="Přepnout motiv" data-i18n-label="Přepnout motiv">Motiv: auto</button>
+  </div>
+</div>
+<main id="app" aria-live="polite"><p class="loading" data-i18n="Načítám…">Načítám…</p></main>
+<script src="/static/i18n.js"></script>
+<script src="/static/charts.js"></script>
+<script src="/static/app.js"></script>
+<script src="/static/repo.js"></script>
+<script src="/static/agents.js"></script>
+<script src="/static/people.js"></script>
+<script src="/static/settings.js"></script>
+<script src="/static/collection.js"></script>
+</body>
+</html>

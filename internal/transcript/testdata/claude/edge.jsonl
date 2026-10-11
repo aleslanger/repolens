@@ -1,0 +1,12 @@
+{"type":"user","timestamp":"2026-10-01T10:00:00.000Z","cwd":"/home/user/projects/demo","sessionId":"edge","message":{"role":"user","content":"<command-name>/model</command-name>\n<command-args>x</command-args>"}}
+{"type":"assistant","timestamp":"2026-10-01T10:00:05.000Z","cwd":"/home/user/projects/demo","requestId":"req_1","message":{"id":"msg_1","model":"claude-opus-5-5","role":"assistant","content":[{"type":"tool_use","id":"tu_1","name":"Agent","input":{"description":"x","prompt":"x"}}],"usage":{"input_tokens":10,"output_tokens":20,"cache_read_input_tokens":30,"cache_creation_input_tokens":40,"output_tokens_details":{"thinking_tokens":5}}}}
+{"type":"assistant","timestamp":"2026-10-01T10:00:05.100Z","cwd":"/home/user/projects/demo","requestId":"req_1","message":{"id":"msg_1","model":"claude-opus-5-5","role":"assistant","content":[{"type":"text","text":"x"}],"usage":{"input_tokens":10,"output_tokens":20,"cache_read_input_tokens":30,"cache_creation_input_tokens":40}}}
+{"type":"assistant","timestamp":"2026-10-01T10:00:06.000Z","cwd":"/home/user/projects/demo","requestId":"req_2","message":{"id":"msg_2","model":"<synthetic>","role":"assistant","content":[{"type":"text","text":"x"}],"usage":{"input_tokens":0,"output_tokens":0}}}
+{"type":"user","timestamp":"2026-10-01T10:00:07.000Z","cwd":"/home/user/projects/demo","toolDenialKind":"permission-rule","message":{"role":"user","content":[{"type":"tool_result","tool_use_id":"tu_1","is_error":true,"content":"x <command-name>/not-a-command</command-name>"}]}}
+{"type":"brand-new-record","timestamp":"2026-10-01T10:00:08.000Z"}
+{"type":"system","subtype":"brand_new_subtype","timestamp":"2026-10-01T10:00:09.000Z"}
+{"type":"attachment","timestamp":"2026-10-01T10:00:10.000Z","attachment":{"type":"brand_new_attachment"}}
+{"type":"attachment","timestamp":"2026-10-01T10:00:11.000Z","attachment":{"type":"hook_cancelled","hookEvent":"PreToolUse","hookName":"PreToolUse:Bash"}}
+{"type":"assistant","timestamp":"2026-10-01T10:00:12.000Z"}
+{"type":"user","timestamp":"2026-10-01T10:20:00.000Z","cwd":"/home/user/projects/demo","message":{"role":"user","content":
+{"type":"system","subtype":"api_error","timestamp":"2026-10-01T10:20:01.000Z"}
