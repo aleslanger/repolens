@@ -9,6 +9,8 @@ access is the GitHub API.
 
 ## Screenshots
 
+[Social sharing image](docs/social/repolens-share.png)
+
 ### Light theme
 
 ![Portfolio in the light theme](docs/screenshots/portfolio-en.png)

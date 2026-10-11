@@ -9,6 +9,8 @@ do sítě je GitHub API.
 
 ## Ukázky obrazovek
 
+[Obrázek pro sdílení](docs/social/repolens-share.png)
+
 ### Světlý motiv
 
 ![Portfolio ve světlém motivu](docs/screenshots/portfolio-cs.png)
