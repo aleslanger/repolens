@@ -60,11 +60,15 @@ vanilla JS with hand-written SVG charts and no CDN, so the export works offline.
 
 ## Installation
 
+Download a binary for your system from the [latest release](https://github.com/aleslanger/repolens/releases/latest),
+or build from source:
+
 ```
 go build -o bin/repolens ./cmd/repolens      # or: make build
 ```
 
-Requires Go ≥ 1.24 (the toolchain fetches 1.26), `git`, and for GitHub either a logged-in `gh` or `GITHUB_TOKEN`.
+Building requires Go 1.26 (or an older Go with automatic toolchain download). Running requires `git`,
+and for GitHub either a logged-in `gh` or `GITHUB_TOKEN`.
 
 To look around first: `repolens demo --db demo.db && repolens serve --db demo.db`.
 

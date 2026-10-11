@@ -59,11 +59,15 @@ vanilla JS s vlastními SVG grafy bez CDN, takže export funguje i offline.
 
 ## Instalace
 
+Stáhni binární soubor pro svůj systém z [posledního vydání](https://github.com/aleslanger/repolens/releases/latest),
+nebo sestav ze zdrojů:
+
 ```
 go build -o bin/repolens ./cmd/repolens      # nebo: make build
 ```
 
-Potřeba: Go ≥ 1.24 (toolchain si stáhne 1.26), `git`, pro GitHub `gh` (přihlášený) nebo `GITHUB_TOKEN`.
+Pro sestavení je potřeba Go 1.26 (nebo starší Go s automatickým stažením toolchainu). Pro běh je
+potřeba `git`, pro GitHub `gh` (přihlášený) nebo `GITHUB_TOKEN`.
 
 Na rozhlédnutí: `repolens demo --db demo.db && repolens serve --db demo.db`.
 
