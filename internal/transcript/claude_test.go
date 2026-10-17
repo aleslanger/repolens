@@ -153,3 +153,15 @@ func TestClaudeRefusesForbiddenPath(t *testing.T) {
 		t.Fatal("expected privacy refusal")
 	}
 }
+
+// Claude Code 2.1.300+ logs every API request (params, prompt blobs, prompt shape); repolens
+// takes tokens from assistant records, so these are known and carry nothing to aggregate.
+func TestClaudeRequestLogRecordsAreKnown(t *testing.T) {
+	res, err := ParseClaudeSession("testdata/claude/requests.jsonl")
+	if err != nil {
+		t.Fatal(err)
+	}
+	if res.Issues.Count(IssueError) != 0 || res.Issues.Count(IssueUnrecognized) != 0 {
+		t.Errorf("issues on request log records: %v", res.Issues)
+	}
+}

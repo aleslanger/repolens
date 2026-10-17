@@ -1,10 +1,12 @@
 package collect
 
 import (
+	"bytes"
 	"context"
 	"io"
 	"os"
 	"path/filepath"
+	"strings"
 	"testing"
 
 	"repolens/internal/config"
@@ -134,5 +136,42 @@ func TestMissingTokenFailsRunWhenAccountsWereAsked(t *testing.T) {
 	sum = &Summary{}
 	if _, err := githubFor(context.Background(), st, Options{Roots: []config.Root{{Path: "/x"}}, GitHub: true}, io.Discard, sum); err != nil || sum.Errors != 0 {
 		t.Errorf("local run without token: err %v, errors %d; want a plain skip", err, sum.Errors)
+	}
+}
+
+func TestWarnSkippedWithoutRoots(t *testing.T) {
+	tests := []struct {
+		name     string
+		opts     Options
+		wantWarn bool
+	}{
+		{"accounts only, agents on", Options{Accounts: []string{"octo"}, Agents: true}, true},
+		{"accounts only, agents off", Options{Accounts: []string{"octo"}}, true},
+		{"with roots", Options{Roots: []config.Root{{Path: "/x"}}, Accounts: []string{"octo"}, Agents: true}, false},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			var log bytes.Buffer
+			warnSkippedWithoutRoots(tt.opts, &log)
+			if got := strings.Contains(log.String(), "\"roots\""); got != tt.wantWarn {
+				t.Errorf("log %q: warning = %v, want %v", log.String(), got, tt.wantWarn)
+			}
+			if tt.wantWarn && tt.opts.Agents != strings.Contains(log.String(), "agent") {
+				t.Errorf("log %q: agents mentioned should follow opts.Agents=%v", log.String(), tt.opts.Agents)
+			}
+		})
+	}
+}
+
+func TestRootsWarningPrecedesGitHubFailure(t *testing.T) {
+	t.Setenv("GITHUB_TOKEN", "")
+	t.Setenv("PATH", t.TempDir()) // no gh binary
+	var log bytes.Buffer
+	err := runSteps(context.Background(), newStore(t), config.Config{}, Options{Accounts: []string{"octo"}, GitHub: true, Agents: true}, &log, &Summary{})
+	if err == nil {
+		t.Fatal("GitHub-only run without a token succeeded; want an error")
+	}
+	if !strings.Contains(log.String(), "\"roots\"") {
+		t.Errorf("log %q lacks the roots warning", log.String())
 	}
 }
