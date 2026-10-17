@@ -16,7 +16,7 @@ import (
 )
 
 // ParserVersion changes whenever parsing results change, so stored transcripts are re-read.
-const ParserVersion = "5"
+const ParserVersion = "6"
 
 // Counter kinds stored per session.
 const (

@@ -24,7 +24,7 @@ var (
 		"permission-mode", "bridge-session", "system", "queue-operation", "pr-link", "file-history-delta",
 		"file-history-snapshot", "cost-state", "frame-link", "artifact-autoreact-ledger", "agent-setting",
 		"agent-name", "relocated", "worktree-state", "artifact-comment-monitor", "fork-context-ref",
-		"continued-in", "summary", "custom-title")
+		"continued-in", "summary", "custom-title", "api-request", "api-request-blob", "api-request-shape")
 	claudeSystemSubtypes = set("stop_hook_summary", "turn_duration", "away_summary", "local_command",
 		"scheduled_task_fire", "compact_boundary", "api_error", "informational", "bridge_status")
 	claudeAttachmentTypes = set("hook_success", "async_hook_response", "total_tokens_reminder",
@@ -36,7 +36,7 @@ var (
 		"bash_output_audience_note", "compact_file_reference", "command_permissions", "hook_blocking_error",
 		"hook_cancelled", "max_turns_reached", "read_truncation_notice", "thinking_drop", "task_status",
 		"plan_mode", "plan_mode_exit", "invoked_skills", "hook_non_blocking_error", "directory",
-		"unknown_command_fallback")
+		"unknown_command_fallback", "skill_mention")
 	hookFailureTypes = set("hook_blocking_error", "hook_non_blocking_error", "hook_cancelled")
 )
 

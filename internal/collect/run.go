@@ -112,6 +112,7 @@ func runSteps(ctx context.Context, st *store.Store, cfg config.Config, opts Opti
 	if err != nil {
 		return err
 	}
+	warnSkippedWithoutRoots(opts, log)
 	var repos []LocalRepo
 	if len(opts.Roots) > 0 {
 		if len(cfg.Owners) == 0 {
@@ -154,6 +155,19 @@ func runSteps(ctx context.Context, st *store.Store, cfg config.Config, opts Opti
 		fmt.Fprintf(log, "GitHub: %d volání API, %d odpovědí z cache (304)\n", calls, hits)
 	}
 	return nil
+}
+
+// warnSkippedWithoutRoots says what a run without roots leaves out; otherwise it ends as a plain
+// success while local commits and agent sessions silently stop updating.
+func warnSkippedWithoutRoots(opts Options, log io.Writer) {
+	if len(opts.Roots) > 0 {
+		return
+	}
+	skipped := "lokální repozitáře"
+	if opts.Agents {
+		skipped += " a transcripty agentů"
+	}
+	fmt.Fprintf(log, "Pozor: žádné adresáře v \"roots\", %s se přeskočí. Přidej je v Nastavení nebo použij --dir.\n", skipped)
 }
 
 // githubFor returns a client when the run needs GitHub. Without a token a GitHub-only run fails,
