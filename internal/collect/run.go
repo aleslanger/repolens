@@ -108,11 +108,11 @@ func dbTotals(ctx context.Context, st *store.Store) (totals, error) {
 }
 
 func runSteps(ctx context.Context, st *store.Store, cfg config.Config, opts Options, log io.Writer, sum *Summary) error {
+	warnSkippedWithoutRoots(opts, log)
 	gh, err := githubFor(ctx, st, opts, log, sum)
 	if err != nil {
 		return err
 	}
-	warnSkippedWithoutRoots(opts, log)
 	var repos []LocalRepo
 	if len(opts.Roots) > 0 {
 		if len(cfg.Owners) == 0 {

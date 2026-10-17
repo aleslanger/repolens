@@ -162,3 +162,16 @@ func TestWarnSkippedWithoutRoots(t *testing.T) {
 		})
 	}
 }
+
+func TestRootsWarningPrecedesGitHubFailure(t *testing.T) {
+	t.Setenv("GITHUB_TOKEN", "")
+	t.Setenv("PATH", t.TempDir()) // no gh binary
+	var log bytes.Buffer
+	err := runSteps(context.Background(), newStore(t), config.Config{}, Options{Accounts: []string{"octo"}, GitHub: true, Agents: true}, &log, &Summary{})
+	if err == nil {
+		t.Fatal("GitHub-only run without a token succeeded; want an error")
+	}
+	if !strings.Contains(log.String(), "\"roots\"") {
+		t.Errorf("log %q lacks the roots warning", log.String())
+	}
+}
